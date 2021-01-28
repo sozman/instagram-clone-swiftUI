@@ -13,6 +13,11 @@ struct Tabbar: View {
     
     @State var showPopup = false
     
+    var contentView = ContentView()
+    var notificationView = NotificationView()
+    var searchView = SearchView()
+    var profileView = ProfileView()
+    
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
@@ -20,13 +25,13 @@ struct Tabbar: View {
                     Spacer()
                     switch tabbarRouter.currentPage {
                     case .home:
-                        ContentView()
+                        contentView
                     case .liked:
-                        NotificationView()
+                        notificationView
                     case .records:
-                        SearchView()
+                        searchView
                     case .user:
-                        ProfileView()
+                        profileView
                     }
                     Spacer()
                     ZStack {
@@ -55,7 +60,7 @@ struct Tabbar: View {
                                         
                         }
                             .frame(width: geometry.size.width, height: geometry.size.height/10)
-                            .background(Color("TabBarBackground").shadow(radius: 2))
+                        .background(Color.lightBackgroundColor)
                     }
                 }
                 .edgesIgnoringSafeArea(.bottom)
@@ -67,7 +72,7 @@ struct Tabbar: View {
                                 Image("logo_topbar")
                             }
                         }
-                    }
+                    }.background(Color.backgroundColor)
             .navigationBarItems(leading: leadingItem(), trailing: trailingItem())
         }
     }

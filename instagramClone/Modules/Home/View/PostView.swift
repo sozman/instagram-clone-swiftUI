@@ -25,7 +25,7 @@ struct PostView: View {
                          lastCommentValue: post?.comment?.last?.comment ?? "")
                 .padding(.bottom, 10)
         }
-            .background(Color.white)
+            .background(Color.lightBackgroundColor)
             .cornerRadius(15)
     }
 
@@ -52,11 +52,10 @@ struct PostView: View {
                     Text(userName)
                         .fontWeight(.bold)
                         .font(.system(size: 15))
-                        .foregroundColor(Color(UIColor.init(hex: "#181818")))
                     Text("\(time) minutes ago")
                         .fontWeight(.regular)
                         .font(.system(size: 10))
-                        .foregroundColor(Color(UIColor.init(hex: "#9D9D9D")))
+                        .foregroundColor(Color.labelColor)
                 }
                     .padding(.leading, 10)
                 Spacer()
@@ -110,7 +109,7 @@ struct PostView: View {
                         Image("ic_post_message")
                     }
                         .frame(width: 30, height: 30, alignment: .center)
-                        .background(Color(UIColor(hex: "#FFFFFF")))
+                    .background(Color.lightBackgroundColor)
                         .cornerRadius(15)
                 }
                     .padding(.horizontal, 20)
@@ -157,11 +156,9 @@ struct PostView: View {
                 Text((firstLikeNameOfComment))
                     .fontWeight(.semibold)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
                 Text("and \(totalLikeCount) People liked")
                     .fontWeight(.regular)
                     .font(.system(size: 9))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
                 Spacer()
             }
         }
@@ -171,11 +168,9 @@ struct PostView: View {
                 Text(ownerNameValue)
                     .fontWeight(.bold)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
                 Text(ownerCommentValue)
                     .fontWeight(.semibold)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
             }
         }
         
@@ -185,7 +180,7 @@ struct PostView: View {
                 Text("See all \(totalCommentCount) comments")
                     .fontWeight(.regular)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#565656", alpha: 0.35)))
+                    .foregroundColor(Color.labelColor)
             }
         }
         
@@ -194,11 +189,9 @@ struct PostView: View {
                 Text(lastNameValue)
                     .fontWeight(.bold)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
                 Text(lastCommentValue)
                     .fontWeight(.semibold)
                     .font(.system(size: 10))
-                    .foregroundColor(Color(UIColor.init(hex: "#181818")))
             }
         }
     }

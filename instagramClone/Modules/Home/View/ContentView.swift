@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                     .padding(.horizontal, 15)
                 }
-            }.background(Color(UIColor(hex: "#F5F6FA")))
+            }.background(Color.backgroundColor)
     }
     
     func leadingItem() -> some View {

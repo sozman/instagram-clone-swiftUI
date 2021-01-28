@@ -15,11 +15,10 @@ struct SearchSection: View {
             Text("Explorer")
                 .fontWeight(.bold)
                 .font(.system(size: 23))
-                .foregroundColor(Color(UIColor.init(hex: "#31323B")))
                 .padding(.leading, 15.0)
             Spacer()
             searchTextField()
-                .background(Color.white)
+                .background(Color.lightBackgroundColor)
                 .padding(.trailing, 15.0)
         }
     }

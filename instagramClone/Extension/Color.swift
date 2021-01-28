@@ -7,6 +7,31 @@
 
 import Foundation
 import UIKit
+import SwiftUI
+
+extension Color {
+    
+    static var backgroundColor: Color {
+        return self.init("background_color")
+    }
+    
+    static var lightBackgroundColor: Color {
+        return self.init("light_background_color")
+    }
+    
+    static var labelColor: Color {
+        return self.init("label_color")
+    }
+    
+    static var shadowColor: Color {
+        return self.init("shadowColor")
+    }
+    
+    init (named: String) {
+        self.init(UIColor(named: named) ?? .clear)
+    }
+}
+
 
 extension UIColor {
     // MARK: - Hex Settings

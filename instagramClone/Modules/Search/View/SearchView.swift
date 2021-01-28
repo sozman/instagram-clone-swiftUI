@@ -16,6 +16,8 @@ struct SearchView: View {
             VStack {
                 SearchCategoriesView(categories: viewModel.searchCategories)
                 searchTextField()
+                    .padding(.horizontal, 25)
+                    .padding(.top, 10)
                 ImageGrid(images: viewModel.search)
                     .padding(.top, 25)
                     .padding(.horizontal, 5)
@@ -39,8 +41,7 @@ struct SearchView: View {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color.gray, lineWidth: 0.7)
         )
-        .padding(.horizontal, 25)
-        .padding(.top, 10)
+        .background(Color.lightBackgroundColor)
     }
 }
 

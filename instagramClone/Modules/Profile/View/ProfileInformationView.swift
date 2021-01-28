@@ -30,9 +30,9 @@ struct ProfileInformationView: View {
             descriptionView(description: profileDescription ?? "")
             informationsView(information: profileInformation ?? ProfileInformationModel())
                 .padding(.bottom, 20)
-        }.background(Color.white)
+        }.background(Color.lightBackgroundColor)
         .cornerRadius(25, corners: [.bottomLeft, .bottomRight])
-        .shadow(color: Color.init(red: 0, green: 0, blue: 0, opacity: 0.1),radius: 10, y: 10)
+        .shadow(color: Color.shadowColor,radius: 10, y: 10)
     }
     private func profilePhotoView() -> some View {
         VStack {
@@ -51,7 +51,6 @@ struct ProfileInformationView: View {
         Text(name)
             .fontWeight(.bold)
             .font(.system(size: 25))
-            .foregroundColor(Color(UIColor.init(hex: "#181818")))
             .padding(.horizontal, 25)
     }
     
@@ -60,7 +59,6 @@ struct ProfileInformationView: View {
             .fontWeight(.regular)
             .multilineTextAlignment(.center)
             .font(.system(size: 10))
-            .foregroundColor(Color(UIColor.init(hex: "#31323B")))
             .padding(.horizontal, 45)
             .padding(.top, 1)
     }
@@ -83,12 +81,11 @@ struct ProfileInformationView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 20))
-                .foregroundColor(Color(UIColor.init(hex: "#31323B")))
             Text("Post")
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 10))
-                .foregroundColor(Color(UIColor.init(hex: "#A3A3A3")))
+                .foregroundColor(Color.labelColor)
         }
     }
     
@@ -98,12 +95,11 @@ struct ProfileInformationView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 20))
-                .foregroundColor(Color(UIColor.init(hex: "#31323B")))
             Text("Follow")
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 10))
-                .foregroundColor(Color(UIColor.init(hex: "#A3A3A3")))
+                .foregroundColor(Color.labelColor)
         }
     }
     
@@ -113,12 +109,11 @@ struct ProfileInformationView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 20))
-                .foregroundColor(Color(UIColor.init(hex: "#31323B")))
             Text("Follower")
                 .fontWeight(.regular)
                 .multilineTextAlignment(.center)
                 .font(.system(size: 10))
-                .foregroundColor(Color(UIColor.init(hex: "#A3A3A3")))
+                .foregroundColor(Color.labelColor)
         }
     }
 }
