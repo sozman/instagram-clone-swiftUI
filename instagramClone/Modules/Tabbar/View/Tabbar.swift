@@ -19,6 +19,76 @@ struct Tabbar: View {
     var profileView = ProfileView()
     
     var body: some View {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            viewForiOS()
+        } else if UIDevice.current.userInterfaceIdiom == .pad {
+            viewForiPad()
+        }
+    }
+    
+    func viewForiPad() -> some View {
+            GeometryReader { geometry in
+                ZStack {
+                    HStack {
+                            VStack(spacing: 5.0) {
+                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .home, width: geometry.size.width / 28, height: 55, systemIconName: "ic_home", tabName: "Home")
+                                    .frame(height: 110.0)
+                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .records, width: geometry.size.width/28, height: 55, systemIconName: "ic_search_tb", tabName: "Liked")
+                                    .frame(height: 110.0)
+                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .liked, width: geometry.size.width/28, height: 55, systemIconName: "ic_like_tb", tabName: "Records")
+                                    .frame(height: 110.0)
+                                Spacer()
+                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .user, width: geometry.size.width/28, height: 55, systemIconName: "ic_user", tabName: "Account")
+                                    .frame(height: 110.0)
+                                            
+                            }
+                                .frame(width: geometry.size.width / 10, height: geometry.size.height)
+                            .background(Color.lightBackgroundColor)
+                        
+                        switch tabbarRouter.currentPage {
+                        case .home:
+                            contentView
+                        case .liked:
+                            notificationView
+                        case .records:
+                            searchView
+                        case .user:
+                            profileView
+                        }
+                    }
+                }
+                .edgesIgnoringSafeArea(.bottom)
+                ZStack {
+                    Circle()
+                        .foregroundColor(.white)
+                        .frame(width: geometry.size.width/10, height: geometry.size.width/10)
+                        .shadow(radius: 4)
+                    Image("ic_main_button")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width/11 , height: geometry.size.width/11)
+                        .rotationEffect(Angle(degrees: showPopup ? 90 : 0))
+                }
+        
+                .onTapGesture {
+                     withAnimation {
+//                                 showPopUp.toggle()
+                     }
+                }
+                .offset(x: (geometry.size.width - geometry.size.width/8), y: (geometry.size.height -  geometry.size.height/11))
+            }
+            .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            HStack {
+                                Image("logo_topbar")
+                            }
+                        }
+                    }.background(Color.backgroundColor)
+            .navigationBarItems(leading: leadingItem(), trailing: trailingItem())
+    }
+    
+    func viewForiOS() -> some View {
         NavigationView {
             GeometryReader { geometry in
                 VStack {
@@ -76,6 +146,7 @@ struct Tabbar: View {
             .navigationBarItems(leading: leadingItem(), trailing: trailingItem())
         }
     }
+    
     func leadingItem() -> some View {
         HStack {
             Button(action: {}) {
