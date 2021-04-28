@@ -75,7 +75,7 @@ struct PostView: View {
     struct MainPost: View {
         @ObservedObject var imageLoader: ImageLoader
         var likeCount: String = ""
-        
+        let height: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 295 : 595
         init(postImageURL: String, likeCount: [Like]?) {
             imageLoader = ImageLoader(urlString: postImageURL)
             self.likeCount = "\(likeCount?.count ?? 0)"
@@ -86,7 +86,7 @@ struct PostView: View {
                 Image(uiImage: imageLoader.image)
                     .resizable()
                     .aspectRatio(1, contentMode: .fill)
-                    .frame(width: .infinity, height: 295, alignment: .center)
+                    .frame(width: .infinity, height: height, alignment: .center)
                     .cornerRadius(17)
                 HStack {
                     Button(action: {}) {

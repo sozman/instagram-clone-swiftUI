@@ -38,7 +38,7 @@ struct Tabbar: View {
                                 TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .liked, width: geometry.size.width/28, height: 55, systemIconName: "ic_like_tb", tabName: "Records")
                                     .frame(height: 110.0)
                                 Spacer()
-                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .user, width: geometry.size.width/28, height: 55, systemIconName: "ic_user", tabName: "Account")
+                                TabbarIcon(tabbarRouter: tabbarRouter, assignedPage: .user, width: geometry.size.width/28, height: 55, systemIconName: "ic_profile", tabName: "Account")
                                     .frame(height: 110.0)
                                             
                             }
