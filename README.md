@@ -16,16 +16,19 @@ A clone of the instagram app built with swiftUI and Vapor Framework for dummy da
 * Dark Mode
 * To navigate pages
 * Combine
-
-## Waiting for development:
 * iPadOS with SwiftUI
-* MacOS with SwiftUI
+*  MacOS with SwiftUI
+## Waiting for development:
+
+
 * WatchOS with SwiftUI
 * TvOS with SwiftUI
 * Web Page with SwiftUI
 
 ## Requirements
 * iOS 13+
+* iPadOS 13+
+* MacOS 11+
 * Xcode 11.0+
 * Swift 5.0+
 
@@ -54,22 +57,57 @@ First of all you should run API target where is on the project. After that you s
 
 
 ## Screenshots
-
-### Home
+### iOS
+#### Home
 | ![Home](images/home.png) | ![HomeDark](images/homedark.png) | 
 |:---:|:---:|
 
-### Search
+#### Search
 | ![Search](images/search.png) | ![SearchDark](images/searchdark.png) | 
 |:---:|:---:|
 
-### Notification
+#### Notification
 | ![Notification](images/notification.png) | ![NotificationDark](images/notificationdark.png) | 
 |:---:|:---:|
 
-### Profile
+#### Profile
 | ![Profile](images/profile.png) | ![Profile Dark](images/profiledark.png) | 
 |:---:|:---:|
+
+### iPadOS
+#### Home
+| ![Home](images/ipadOs/home_ipad.png) | ![HomeDark](images/ipadOs/home_ipadDark.png) | 
+|:---:|:---:|
+
+#### Search
+| ![Search](images/ipadOs/search_ipad.png) | ![SearchDark](images/ipadOs/search_ipadDark.png) | 
+|:---:|:---:|
+
+#### Notification
+| ![Notification](images/ipadOs/notification_ipad.png) | ![NotificationDark](images/ipadOs/notification_ipadDark.png) | 
+|:---:|:---:|
+
+#### Profile
+| ![Profile](images/ipadOs/profile_ipad.png) | ![Profile Dark](images/ipadOs/profile_ipadDark.png) | 
+|:---:|:---:|
+
+### Mac OS
+#### Home
+| ![Home](images/macos/home_mac.png) | ![HomeDark](images/macos/home_macDark.png) | 
+|:---:|:---:|
+
+#### Search
+| ![Search](images/macos/search_mac.png) | ![SearchDark](images/macos/search_macDark.png) | 
+|:---:|:---:|
+
+#### Notification
+| ![Notification](images/macos/notification_mac.png) | ![NotificationDark](images/macos/notification_macDark.png) | 
+|:---:|:---:|
+
+#### Profile
+| ![Profile](images/macos/profile_mac.png) | ![Profile Dark](images/macos/profile_macDark.png) | 
+|:---:|:---:|
+
 
 ## Author
 Sinan Özman, sinanozman@icloud.com
