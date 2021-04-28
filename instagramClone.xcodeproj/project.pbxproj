@@ -60,7 +60,34 @@
 		6CEE1A7725B390E400111A0A /* WaterfallGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 6CEE1A7625B390E400111A0A /* WaterfallGrid */; };
 		6CEE1A8B25B4212200111A0A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE1A8A25B4212200111A0A /* NotificationView.swift */; };
 		6CEE1A8E25B4213300111A0A /* NotificationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEE1A8D25B4213300111A0A /* NotificationItemView.swift */; };
+		6CF0A5DD263A20F3008DB177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0A5DC263A20F3008DB177 /* Assets.xcassets */; };
+		6CF0A5E4263A20F3008DB177 /* InstagramClone Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CF0A5E3263A20F3008DB177 /* InstagramClone Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CF0A5E9263A20F3008DB177 /* instagramCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0A5E8263A20F3008DB177 /* instagramCloneApp.swift */; };
+		6CF0A5EB263A20F3008DB177 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0A5EA263A20F3008DB177 /* ContentView.swift */; };
+		6CF0A5ED263A20F3008DB177 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0A5EC263A20F3008DB177 /* NotificationController.swift */; };
+		6CF0A5EF263A20F3008DB177 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0A5EE263A20F3008DB177 /* NotificationView.swift */; };
+		6CF0A5F1263A20F3008DB177 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0A5F0263A20F3008DB177 /* ComplicationController.swift */; };
+		6CF0A5F3263A20F4008DB177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0A5F2263A20F4008DB177 /* Assets.xcassets */; };
+		6CF0A5F6263A20F4008DB177 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0A5F5263A20F4008DB177 /* Preview Assets.xcassets */; };
+		6CF0A5FB263A20F4008DB177 /* InstagramClone.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6CF0A5DA263A20F0008DB177 /* InstagramClone.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CF0A5E5263A20F3008DB177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C815C6D25AE192B00711A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF0A5E2263A20F3008DB177;
+			remoteInfo = "InstagramClone Extension";
+		};
+		6CF0A5F9263A20F4008DB177 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C815C6D25AE192B00711A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF0A5D9263A20F0008DB177;
+			remoteInfo = InstagramClone;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6C6B55B725B43C7300F662F1 /* CopyFiles */ = {
@@ -71,6 +98,28 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6CF0A5FC263A20F4008DB177 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6CF0A5FB263A20F4008DB177 /* InstagramClone.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0A5FF263A20F4008DB177 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CF0A5E4263A20F3008DB177 /* InstagramClone Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -127,6 +176,19 @@
 		6CE1897F25B4238E00E7C828 /* SearchCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCategoriesView.swift; sourceTree = "<group>"; };
 		6CEE1A8A25B4212200111A0A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		6CEE1A8D25B4213300111A0A /* NotificationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItemView.swift; sourceTree = "<group>"; };
+		6CF0A5DA263A20F0008DB177 /* InstagramClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0A5DC263A20F3008DB177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CF0A5DE263A20F3008DB177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0A5E3263A20F3008DB177 /* InstagramClone Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InstagramClone Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF0A5E8263A20F3008DB177 /* instagramCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramCloneApp.swift; sourceTree = "<group>"; };
+		6CF0A5EA263A20F3008DB177 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6CF0A5EC263A20F3008DB177 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6CF0A5EE263A20F3008DB177 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		6CF0A5F0263A20F3008DB177 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6CF0A5F2263A20F4008DB177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CF0A5F5263A20F4008DB177 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6CF0A5F7263A20F4008DB177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CF0A5F8263A20F4008DB177 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +207,13 @@
 			files = (
 				6CEE1A7725B390E400111A0A /* WaterfallGrid in Frameworks */,
 				6C62498225B4BC3B007EB432 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0A5E0263A20F3008DB177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +363,8 @@
 			children = (
 				6C815C7725AE192B00711A14 /* instagramClone */,
 				6C6B55BA25B43C7400F662F1 /* API */,
+				6CF0A5DB263A20F0008DB177 /* InstagramClone */,
+				6CF0A5E7263A20F3008DB177 /* InstagramClone Extension */,
 				6C815C7625AE192B00711A14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -303,6 +374,8 @@
 			children = (
 				6C815C7525AE192B00711A14 /* instagramClone.app */,
 				6C6B55B925B43C7300F662F1 /* API */,
+				6CF0A5DA263A20F0008DB177 /* InstagramClone.app */,
+				6CF0A5E3263A20F3008DB177 /* InstagramClone Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +490,39 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
+		6CF0A5DB263A20F0008DB177 /* InstagramClone */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0A5DC263A20F3008DB177 /* Assets.xcassets */,
+				6CF0A5DE263A20F3008DB177 /* Info.plist */,
+			);
+			path = InstagramClone;
+			sourceTree = "<group>";
+		};
+		6CF0A5E7263A20F3008DB177 /* InstagramClone Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0A5E8263A20F3008DB177 /* instagramCloneApp.swift */,
+				6CF0A5EA263A20F3008DB177 /* ContentView.swift */,
+				6CF0A5EC263A20F3008DB177 /* NotificationController.swift */,
+				6CF0A5EE263A20F3008DB177 /* NotificationView.swift */,
+				6CF0A5F0263A20F3008DB177 /* ComplicationController.swift */,
+				6CF0A5F2263A20F4008DB177 /* Assets.xcassets */,
+				6CF0A5F7263A20F4008DB177 /* Info.plist */,
+				6CF0A5F8263A20F4008DB177 /* PushNotificationPayload.apns */,
+				6CF0A5F4263A20F4008DB177 /* Preview Content */,
+			);
+			path = "InstagramClone Extension";
+			sourceTree = "<group>";
+		};
+		6CF0A5F4263A20F4008DB177 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0A5F5263A20F4008DB177 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,10 +554,12 @@
 				6C815C7125AE192B00711A14 /* Sources */,
 				6C815C7225AE192B00711A14 /* Frameworks */,
 				6C815C7325AE192B00711A14 /* Resources */,
+				6CF0A5FC263A20F4008DB177 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CF0A5FA263A20F4008DB177 /* PBXTargetDependency */,
 			);
 			name = instagramClone;
 			packageProductDependencies = (
@@ -462,13 +570,47 @@
 			productReference = 6C815C7525AE192B00711A14 /* instagramClone.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6CF0A5D9263A20F0008DB177 /* InstagramClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0A603263A20F4008DB177 /* Build configuration list for PBXNativeTarget "InstagramClone" */;
+			buildPhases = (
+				6CF0A5D8263A20F0008DB177 /* Resources */,
+				6CF0A5FF263A20F4008DB177 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CF0A5E6263A20F3008DB177 /* PBXTargetDependency */,
+			);
+			name = InstagramClone;
+			productName = InstagramClone;
+			productReference = 6CF0A5DA263A20F0008DB177 /* InstagramClone.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6CF0A5E2263A20F3008DB177 /* InstagramClone Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF0A602263A20F4008DB177 /* Build configuration list for PBXNativeTarget "InstagramClone Extension" */;
+			buildPhases = (
+				6CF0A5DF263A20F3008DB177 /* Sources */,
+				6CF0A5E0263A20F3008DB177 /* Frameworks */,
+				6CF0A5E1263A20F3008DB177 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InstagramClone Extension";
+			productName = "InstagramClone Extension";
+			productReference = 6CF0A5E3263A20F3008DB177 /* InstagramClone Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6C815C6D25AE192B00711A14 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					6C6B55B825B43C7300F662F1 = {
@@ -476,6 +618,12 @@
 					};
 					6C815C7425AE192B00711A14 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					6CF0A5D9263A20F0008DB177 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6CF0A5E2263A20F3008DB177 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
@@ -500,6 +648,8 @@
 			targets = (
 				6C815C7425AE192B00711A14 /* instagramClone */,
 				6C6B55B825B43C7300F662F1 /* API */,
+				6CF0A5D9263A20F0008DB177 /* InstagramClone */,
+				6CF0A5E2263A20F3008DB177 /* InstagramClone Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -511,6 +661,23 @@
 			files = (
 				6C815C8025AE192D00711A14 /* Preview Assets.xcassets in Resources */,
 				6C815C7D25AE192D00711A14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0A5D8263A20F0008DB177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0A5DD263A20F3008DB177 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CF0A5E1263A20F3008DB177 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0A5F6263A20F4008DB177 /* Preview Assets.xcassets in Resources */,
+				6CF0A5F3263A20F4008DB177 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +745,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CF0A5DF263A20F3008DB177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF0A5ED263A20F3008DB177 /* NotificationController.swift in Sources */,
+				6CF0A5EB263A20F3008DB177 /* ContentView.swift in Sources */,
+				6CF0A5F1263A20F3008DB177 /* ComplicationController.swift in Sources */,
+				6CF0A5E9263A20F3008DB177 /* instagramCloneApp.swift in Sources */,
+				6CF0A5EF263A20F3008DB177 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CF0A5E6263A20F3008DB177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF0A5E2263A20F3008DB177 /* InstagramClone Extension */;
+			targetProxy = 6CF0A5E5263A20F3008DB177 /* PBXContainerItemProxy */;
+		};
+		6CF0A5FA263A20F4008DB177 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF0A5D9263A20F0008DB177 /* InstagramClone */;
+			targetProxy = 6CF0A5F9263A20F4008DB177 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6C6B55BE25B43C7400F662F1 /* Debug */ = {
@@ -769,6 +961,92 @@
 			};
 			name = Release;
 		};
+		6CF0A5FD263A20F4008DB177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = InstagramClone_Extension;
+				INFOPLIST_FILE = InstagramClone/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinanozman.instagramClone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		6CF0A5FE263A20F4008DB177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = InstagramClone_Extension;
+				INFOPLIST_FILE = InstagramClone/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinanozman.instagramClone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		6CF0A600263A20F4008DB177 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramClone Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "InstagramClone Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinanozman.instagramClone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		6CF0A601263A20F4008DB177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InstagramClone Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "InstagramClone Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sinanozman.instagramClone.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -795,6 +1073,24 @@
 			buildConfigurations = (
 				6C815C8525AE192D00711A14 /* Debug */,
 				6C815C8625AE192D00711A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF0A602263A20F4008DB177 /* Build configuration list for PBXNativeTarget "InstagramClone Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0A600263A20F4008DB177 /* Debug */,
+				6CF0A601263A20F4008DB177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF0A603263A20F4008DB177 /* Build configuration list for PBXNativeTarget "InstagramClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CF0A5FD263A20F4008DB177 /* Debug */,
+				6CF0A5FE263A20F4008DB177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
