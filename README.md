@@ -17,6 +17,13 @@ A clone of the instagram app built with swiftUI and Vapor Framework for dummy da
 * To navigate pages
 * Combine
 
+## Waiting for development:
+* iPadOS with SwiftUI
+* MacOS with SwiftUI
+* WatchOS with SwiftUI
+* TvOS with SwiftUI
+* Web Page with SwiftUI
+
 ## Requirements
 * iOS 13+
 * Xcode 11.0+
